@@ -17,3 +17,5 @@ del "*.bmp" "*.png" "*.jpg" /q /f >nul 2>nul
 :fail
 echo;
 pause
+
+#文本格式应为ANSI !
