@@ -1,14 +1,14 @@
 @echo off
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd","/c %~s0 ::","","runas",1)(window.close)&&exit
-echo oemsevUEFILOGOĞŞ¸Ä¹¤¾ß
+echo oemsevUEFILOGOä¿®æ”¹å·¥å…·
 echo;
-echo **********½«Í¼Æ¬ÎÄ¼ş·ÅÔÚµ±Ç°Ä¿Â¼ÏÂ£¬ÊäÈëÎÄ¼şÃû²¢Ö´ĞĞ¡£³É¹¦ºóÖØÆôÉúĞ§**********
+echo **********å°†å›¾ç‰‡æ–‡ä»¶æ”¾åœ¨å½“å‰ç›®å½•ä¸‹ï¼Œè¾“å…¥æ–‡ä»¶åå¹¶æ‰§è¡Œã€‚æˆåŠŸåé‡å¯ç”Ÿæ•ˆ**********
 echo;
-echo ***½öÖ§³Ö120KBÒÔÏÂ*bmp*jpgºÍ²¿·Ö*png¸ñÊ½Í¼Ïñ***
+echo ***ä»…æ”¯æŒ120KBä»¥ä¸‹*bmp*jpgå’Œéƒ¨åˆ†*pngæ ¼å¼å›¾åƒ***
 echo;
 echo;
 echo;
-set /p name=#ÊäÈëÎÄ¼şÃû(º¬À©Õ¹Ãû)°´»Ø³µ¼üÖ´ĞĞ:
+set /p name=#è¾“å…¥æ–‡ä»¶å(å«æ‰©å±•å)æŒ‰å›è½¦é”®æ‰§è¡Œ:
 for /f "tokens=1,2,* " %%i in ('reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6ea3ce12-b991-4b65-9f8d-b148eaaecd87}_is1 /v InstallLocation ^| find /i "InstallLocation"') do set var=%%k
 cd /d %~dp0
 copy "%name%" "%var%DefaultTool\" /y || goto fail
