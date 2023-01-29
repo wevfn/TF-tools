@@ -1,3 +1,7 @@
+REM 安装控制/游戏中心后使用！！！
+REM 文本格式应为ANSI
+
+
 @echo off
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd","/c %~s0 ::","","runas",1)(window.close)&&exit
 echo oemsevUEFILOGO修改工具
@@ -18,4 +22,3 @@ del "*.bmp" "*.png" "*.jpg" /q /f >nul 2>nul
 echo;
 pause
 
-#文本格式应为ANSI !
